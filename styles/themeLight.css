@@ -1,0 +1,8 @@
+/** Хз почему не сделали на каждую тему отдельный класс ... семантически неправильно в page это лить */
+.theme_light {
+    --text-main : #312A4E;
+    --text-main-alpha : rgba(49, 42, 78, .5);
+    --bg-main: #F3EFEC;
+    --special: #FFAB6B;
+    --border : 1px solid var(--text-main)
+}

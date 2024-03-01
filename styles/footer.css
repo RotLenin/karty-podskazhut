@@ -1,0 +1,12 @@
+.footer {
+    color : var(--text-main);
+    background-color: var(--bg-main);
+    border-top: var(--border);
+    padding: var(--base-padding);
+}
+
+.footer__title {
+    text-align: center;
+    font: var(--font-s);
+    text-transform: uppercase;
+}

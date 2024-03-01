@@ -1,22 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.page {
-  min-inline-size: 360px;
-  margin: 0;
-}
-
-p,
-h1,
-h2,
-h3,
-blockquote,
-ul,
-ol,
-li,
-figure {
-  margin: 0;
-}
+@import "themeDark.css";
+@import "page.css";
+@import "header.css";
+@import "section.css";
+@import "footer.css";
+@import "themeLight.css";

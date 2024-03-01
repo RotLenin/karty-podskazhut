@@ -1,0 +1,7 @@
+.theme_dark {
+    --text-main : #B3B3B3;
+    --text-main-alpha : rgba(179, 179, 179, .5);
+    --bg-main: #171717;
+    --special: #FFAB6B;
+    --border : 1px solid var(--text-main);
+}
