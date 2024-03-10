@@ -5,14 +5,15 @@
 
 .section__title {
     padding: var(--base-padding);
-    padding-top: 10%;
+    padding-top: 6.5%;
+    padding-bottom: 16px;
     text-align: center;
     font: var(--font-l);
 }
 
 .section__paragraph {
     padding: var(--base-padding);
-    padding-bottom: 1.5em;
+    padding-bottom: .3em;
     font: var(--font-s);
 }
 
@@ -38,7 +39,7 @@
 }
 
 .section__figure {
-    padding: 7% 0;
+    padding: 6% 0 5%;
 }
 
 .section__figure-picture {
@@ -55,7 +56,7 @@
 .section__article {
     aspect-ratio: 4 / 3;
     padding : var(--base-padding);
-    padding-top: 7%;
+    padding-top: 6.2%;
 }
 
 .section__article-wrapper {
@@ -68,7 +69,7 @@
 }
 
 .section__article-title {
-    width: max(50%, 213px);
+    width: clamp(412px, 50%, 213px);
     font: var(--font-xl);
     line-height: 100%;
     font-size: 60px; /* Не масштабируется как стандартный размер */
@@ -80,11 +81,15 @@
 
 .section__blockquote {
     margin: 0 auto;
-    width: 75%;
-    padding-bottom: 1.5em;
+    width: 68%;
+    padding: 1.5em 0;
     font: var(--font-s);
     line-height: 200%;
     font-style: italic;
+}
+
+.section__blockquote + .section__paragraph {
+    padding-top: 0;
 }
 
 .section__link {
@@ -102,15 +107,10 @@
 
 .section__list {
     padding: var(--base-padding);
+    padding-top: 5%;
     font: var(--font-xl);
     font-size: 30px;
     text-align: center;
-}
-
-@media (min-width: 1400px) {
-    .section__list {
-        padding-top: 90px;
-    }
 }
 
 .section__list-item {
@@ -122,13 +122,7 @@
 }
 
 .section__list-item:first-child {
-    padding-top: 12px;
-}
-
-@media (min-width: 1440px) {
-    .section__list-item:first-child {
-        padding-top: 30px;
-    }
+    padding-top: 1.6em;
 }
 
 .section__list-item::before {
