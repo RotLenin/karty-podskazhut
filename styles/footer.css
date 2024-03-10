@@ -2,7 +2,7 @@
     color : var(--text-main);
     background-color: var(--bg-main);
     border-top: var(--border);
-    padding: var(--base-padding);
+    padding: 10% 2.5% 2.5% 2.5%;
 }
 
 .footer__title {

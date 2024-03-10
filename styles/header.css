@@ -4,7 +4,7 @@
 }
 
 .header__title {
-    padding: 36px 18px 40px;
+    padding: 10% 5vi 40px;
     text-align: center;
     font: var(--font-xl);
 }
@@ -45,6 +45,10 @@
     cursor: pointer;
     background: transparent;
     z-index: 1;
+}
+
+.header__theme-button:disabled {
+    cursor: not-allowed;
 }
 
 .theme_dark .header__theme-button:not(.header__theme-button_is-active):hover,

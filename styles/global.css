@@ -15,18 +15,11 @@
     --font-line-l : 90%;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--stix-to-text);
 
-    --font-size-xl : 60px;
+    --font-size-xl : clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
     --font-line-xl : 90%;
     --font-xl: var(--fw-semibold) var(--font-size-xl) / var(--font-line-xl) var(--stix-to-text);
 
-    --base-padding: 20px 18px;
-}
-
-@media (min-width: 1440px) {
-    :root {
-        --font-size-xl : 120px;
-        --base-padding: 20px 72px;
-    }
+    --base-padding: 20px 5vi;
 }
 
 *,
