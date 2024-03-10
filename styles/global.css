@@ -30,10 +30,6 @@
     background-color: inherit;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .page {
     min-inline-size: 360px;
     margin: 0;
