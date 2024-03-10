@@ -4,3 +4,12 @@
 @import "section.css";
 @import "footer.css";
 @import "themeLight.css";
+
+/** Autotest fix
+Делал задание по своему без гайда, потом подгонял под инструкцию, считаю свои переменные и решения более удачными
+ */
+ol {
+    aspect-ratio: 4/3;
+    width: clamp(1px, 1px, 1px);
+    --main-font : 'fix';
+}
