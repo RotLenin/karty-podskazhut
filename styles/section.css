@@ -1,21 +1,28 @@
 .section {
     color : var(--text-main);
     background-color: var(--bg-main);
+    padding-top: 4px;
+}
+
+.section:first-child {
+    padding-top: 0;
 }
 
 .section__title {
     padding: var(--base-padding);
-    padding-top: 6.5%;
-    padding-bottom: 16px;
+    padding-top: 6.4%;
+    padding-bottom: 2.5%;
     text-align: center;
     font: var(--font-l);
 }
 
 .section__paragraph {
     padding: var(--base-padding);
-    padding-bottom: .3em;
+    padding-top: 0;
+    padding-bottom: 1.5em;
     font: var(--font-s);
 }
+
 
 .section__paragraph:last-child {
     padding-bottom: 0;
@@ -39,7 +46,7 @@
 }
 
 .section__figure {
-    padding: 6% 0 5%;
+    padding: 4.5% 0 6.2%;
 }
 
 .section__figure-picture {
@@ -54,12 +61,12 @@
 }
 
 .section__article {
-    aspect-ratio: 4 / 3;
     padding : var(--base-padding);
     padding-top: 6.2%;
 }
 
 .section__article-wrapper {
+    aspect-ratio: 4 / 3;
     height: 100%;
     border: var(--border);
     display: flex;
@@ -69,7 +76,7 @@
 }
 
 .section__article-title {
-    width: clamp(412px, 50%, 213px);
+    width: min(max(213px, 50%), 412px);
     font: var(--font-xl);
     line-height: 100%;
     font-size: 60px; /* Не масштабируется как стандартный размер */
@@ -82,14 +89,10 @@
 .section__blockquote {
     margin: 0 auto;
     width: 68%;
-    padding: 1.5em 0;
+    padding-bottom: 1.5em;
     font: var(--font-s);
     line-height: 200%;
     font-style: italic;
-}
-
-.section__blockquote + .section__paragraph {
-    padding-top: 0;
 }
 
 .section__link {
@@ -111,10 +114,12 @@
     font: var(--font-xl);
     font-size: 30px;
     text-align: center;
+    padding-bottom: clamp(36px, 10vw, 144px);
 }
 
 .section__list-item {
-    padding-left: 15px;
+    position: relative;
+    padding-left: 40px;
     font: var(--font-s);
     text-align: left;
     list-style: none;
@@ -122,13 +127,16 @@
 }
 
 .section__list-item:first-child {
-    padding-top: 1.6em;
+    margin-top: clamp(8px, calc(100vw / 45),32px);
 }
 
 .section__list-item::before {
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 8px);
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     margin-right: 8px;
     content: "";
 }
