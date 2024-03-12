@@ -18,3 +18,8 @@ ol {
 ol:focus, ol:hover, ol:active {
 
 }
+
+/* TODO: Удалить после дебага */
+::-webkit-scrollbar {
+    display: none;
+}

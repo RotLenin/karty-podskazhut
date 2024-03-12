@@ -22,7 +22,8 @@
 .header__theme-toggle {
     display: flex;
     justify-content: flex-end;
-    gap: 4px;
+    align-items: center;
+    gap: 16px;
     width: 50%;
 }
 
@@ -37,6 +38,7 @@
     cursor: pointer;
     background: transparent;
     z-index: 1;
+    padding: 0;
 }
 
 .header__theme-button:disabled {
@@ -55,7 +57,7 @@
 
 .theme_dark .header__theme-button_is-active {
     font-weight: var(--fw-bold);
-    background-position-y: 100%;
+    background-position-y: 80%;
     background-image: url("../images/pattern.svg");
     background-repeat: repeat-x;
 }
@@ -68,8 +70,8 @@
     content: "";
     position: absolute;
     display: block;
-    height: 8px;
-    bottom: 2px;
+    height: 33%;
+    bottom: 20%;
     right: 0;
     left: 0;
     width: 100%;
