@@ -23,7 +23,7 @@ darkThemeBtn.onclick = () => {
 };
 
 function setDarkTheme() {
-  document.querySelector('.page').classList.add('theme_dark');
+  document.querySelector('.page').className = 'page theme_dark';
   lightThemeBtn.classList.remove('header__theme-button_is-active');
   darkThemeBtn.classList.add('header__theme-button_is-active');
   darkThemeBtn.disabled = true;
@@ -31,7 +31,7 @@ function setDarkTheme() {
 }
 
 function setLightTheme() {
-  document.querySelector('.page').className = 'page';
+  document.querySelector('.page').className = 'page theme_light';
   darkThemeBtn.classList.remove('header__theme-button_is-active');
   lightThemeBtn.classList.add('header__theme-button_is-active');
   darkThemeBtn.disabled = false;

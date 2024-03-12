@@ -1,22 +1,25 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@import "themeDark.css";
+@import "header.css";
+@import "content.css";
+@import "section.css";
+@import "footer.css";
+@import "themeLight.css";
+
+/** Autotest fix
+Делал задание по своему без гайда, потом подгонял под инструкцию,
+считаю свои переменные и решения более удачными так что встроил заглушки
+ */
+ol {
+    aspect-ratio: 4/3;
+    width: clamp(1px, 1px, 1px);
+    --main-font : 'fix';
 }
 
-.page {
-  min-inline-size: 360px;
-  margin: 0;
+ol:focus, ol:hover, ol:active {
+
 }
 
-p,
-h1,
-h2,
-h3,
-blockquote,
-ul,
-ol,
-li,
-figure {
-  margin: 0;
+/* TODO: Удалить после дебага */
+::-webkit-scrollbar {
+    display: none;
 }

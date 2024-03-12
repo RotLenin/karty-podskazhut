@@ -1,0 +1,48 @@
+:root {
+    /** FONTS **/
+    --raleway : "Raleway", sans-serif;
+    --stix-to-text : "STIX Two Text", sans-serif;
+
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --font-size-s : 18px;
+    --font-line-s : normal;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--raleway);
+
+    --font-size-l : 30px;
+    --font-line-l : 90%;
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--stix-to-text);
+
+    --font-size-xl : clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+    --font-line-xl : 90%;
+    --font-xl: var(--fw-semibold) var(--font-size-xl) / var(--font-line-xl) var(--stix-to-text);
+
+    --base-padding: 20px 5vi;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: inherit;
+    background-color: inherit;
+}
+
+.page {
+    min-inline-size: 360px;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+    margin: 0;
+}
